@@ -5,7 +5,7 @@ function Movie(props) {
     <>
       <div className="movie__container">
         <img
-          src={`https://image.tmdb.org/t/p/w500${props.poster_path}`} // 이미지 경로를 설정
+          src={`https://image.tmdb.org/t/p/w300${props.poster_path}`} // 이미지 경로를 설정
           alt={props.title} // 이미지의 대체 텍스트
         />
         <div className="movie__info">
