@@ -1,0 +1,26 @@
+.movie__detail {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+}
+
+.movie__detail:hover {
+  opacity: 1;
+}
+
+.movie__detail__title {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.movie__detail__overview {
+  font-size: 16px;
+}

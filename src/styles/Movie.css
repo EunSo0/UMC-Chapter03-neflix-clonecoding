@@ -1,17 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: rgb(33, 33, 61);
-}
-
 .movie__container {
+  height: 530px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,11 +15,12 @@ img {
 
 .movie__info {
   width: 300px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 20px;
+  padding: 0 20px;
   background-color: rgb(70, 70, 110);
   color: #fff;
   font-size: 16px;

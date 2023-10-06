@@ -1,18 +1,27 @@
 import Movie from "./components/Movie";
+import MovieDetail from "./components/MovieDetail";
 import { movies } from "./movieDummy";
-import "./index.css";
+import "./styles/index.css";
 
 function App() {
   return (
-    <div className="wrapper">
+    <div className="base">
       {movies.results.map((movie, index) => {
         return (
-          <Movie
-            key={index}
-            title={movie.title}
-            vote_average={movie.vote_average}
-            poster_path={movie.poster_path}
-          />
+          <div className="movie__wrapper">
+            <Movie
+              key={index}
+              title={movie.title}
+              vote_average={movie.vote_average}
+              poster_path={movie.poster_path}
+              overview={movie.overview}
+            />
+            <MovieDetail
+              key={index}
+              title={movie.title}
+              overview={movie.overview}
+            />
+          </div>
         );
       })}
       ;
