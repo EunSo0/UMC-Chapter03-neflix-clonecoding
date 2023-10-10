@@ -1,4 +1,5 @@
-import * as M from "../styles/Movie";
+import React from "react";
+import * as M from "../styles/Movie.style";
 
 function Movie(props) {
   return (

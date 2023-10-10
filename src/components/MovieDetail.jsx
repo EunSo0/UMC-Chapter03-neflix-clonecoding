@@ -1,4 +1,5 @@
-import * as MD from "../styles/MovieDetail";
+import React from "react";
+import * as MD from "../styles/MovieDetail.style";
 
 export default function MovieDetail(props) {
   return (

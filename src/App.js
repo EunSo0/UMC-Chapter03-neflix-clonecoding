@@ -1,3 +1,4 @@
+import React from "react";
 import Movie from "./components/Movie";
 import MovieDetail from "./components/MovieDetail";
 import { movies } from "./movieDummy";
@@ -8,7 +9,7 @@ function App() {
     <div className="base">
       {movies.results.map((movie, index) => {
         return (
-          <div className="movie__wrapper">
+          <div className="movie__wrapper" key={index}>
             <Movie
               key={index}
               title={movie.title}
