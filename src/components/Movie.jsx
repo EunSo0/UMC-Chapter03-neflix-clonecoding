@@ -1,18 +1,18 @@
-import "../styles/Movie.css";
+import * as M from "../styles/Movie";
 
 function Movie(props) {
   return (
     <>
-      <div className="movie__container">
-        <img
+      <M.MovieContainer>
+        <M.Img
           src={`https://image.tmdb.org/t/p/w300${props.poster_path}`} // 이미지 경로를 설정
           alt={props.title} // 이미지의 대체 텍스트
         />
-        <div className="movie__info">
-          <div className="movie__title">{props.title}</div>
-          <div className="movie__average">{props.vote_average}</div>
-        </div>
-      </div>
+        <M.MovieInfo>
+          <M.MovieTitle>{props.title}</M.MovieTitle>
+          <div>{props.vote_average}</div>
+        </M.MovieInfo>
+      </M.MovieContainer>
     </>
   );
 }

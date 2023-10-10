@@ -1,12 +1,12 @@
-import "../styles/MovieDetail.css";
+import * as MD from "../styles/MovieDetail";
 
 export default function MovieDetail(props) {
   return (
     <>
-      <div className="movie__detail">
-        <div className="movie__detail__title">{props.title}</div>
-        <div className="movie__detail__overview">{props.overview}</div>
-      </div>
+      <MD.MovieDetail>
+        <MD.MovieDetailTitle>{props.title}</MD.MovieDetailTitle>
+        <MD.MovieDetailOverview>{props.overview}</MD.MovieDetailOverview>
+      </MD.MovieDetail>
     </>
   );
 }

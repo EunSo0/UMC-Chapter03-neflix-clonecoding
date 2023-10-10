@@ -1,4 +1,6 @@
-.movie__detail {
+import styled from "styled-components";
+
+export const MovieDetail = styled.div`
   position: absolute;
   top: 0;
   width: 300px;
@@ -6,21 +8,21 @@
   display: flex;
   flex-direction: column;
   margin: 20px;
-  padding: 60px 20px;
+  padding: 30px 20px;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   opacity: 0;
-}
 
-.movie__detail:hover {
-  opacity: 1;
-}
+  &:hover {
+    opacity: 1;
+  }
+`;
 
-.movie__detail__title {
+export const MovieDetailTitle = styled.div`
   font-size: 18px;
   margin-bottom: 25px;
-}
+`;
 
-.movie__detail__overview {
+export const MovieDetailOverview = styled.div`
   font-size: 16px;
-}
+`;

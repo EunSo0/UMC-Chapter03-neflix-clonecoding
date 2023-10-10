@@ -1,4 +1,6 @@
-.movie__container {
+import styled from "styled-components";
+
+export const MovieContainer = styled.div`
   height: 530px;
   display: flex;
   flex-direction: column;
@@ -6,14 +8,14 @@
   align-items: center;
   margin: 10px;
   padding: 10px;
-}
+`;
 
-img {
+export const Img = styled.img`
   width: 300px;
   height: 450px;
-}
+`;
 
-.movie__info {
+export const MovieInfo = styled.div`
   width: 300px;
   height: 100px;
   display: flex;
@@ -24,8 +26,8 @@ img {
   background-color: rgb(70, 70, 110);
   color: #fff;
   font-size: 16px;
-}
+`;
 
-.movie__title {
+export const MovieTitle = styled.div`
   font-weight: bold;
-}
+`;
