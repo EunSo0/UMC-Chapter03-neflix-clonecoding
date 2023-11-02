@@ -1,38 +1,24 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
-export default class LoginControl extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLogin: false,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+export default function LoginControl() {
+  const [isLogin, setIsLogin] = useState(false);
 
-  handleClick() {
-    this.setState((prevState) => ({
-      isLogin: !prevState.isLogin,
-    }));
-  }
-
-  render() {
-    return (
-      <>
-        {this.state.isLogin ? (
-          <Wrapper>
-            <Button onClick={this.handleClick}>로그아웃</Button>
-            <Txt>환영합니다!</Txt>
-          </Wrapper>
-        ) : (
-          <Wrapper>
-            <Button onClick={this.handleClick}>로그인</Button>
-            <Txt>로그인 해주세요!</Txt>
-          </Wrapper>
-        )}
-      </>
-    );
-  }
+  return (
+    <>
+      {isLogin ? (
+        <Wrapper>
+          <Button onClick={() => setIsLogin(false)}>로그아웃</Button>
+          <Txt>환영합니다!</Txt>
+        </Wrapper>
+      ) : (
+        <Wrapper>
+          <Button onClick={() => setIsLogin(true)}>로그인</Button>
+          <Txt>로그인 해주세요!</Txt>
+        </Wrapper>
+      )}
+    </>
+  );
 }
 
 const Wrapper = styled.div`

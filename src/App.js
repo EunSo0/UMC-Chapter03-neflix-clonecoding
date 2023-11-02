@@ -1,10 +1,11 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Movie from "./pages/Movie.jsx";
 import TV from "./pages/TV.jsx";
 import Celebrity from "./pages/Celebrity.jsx";
 import MovieDetail from "./pages/MovieDetail.jsx";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
         <Route path="/movie/:title" element={<MovieDetail />} />
         <Route path="/tv" element={<TV />} />
         <Route path="/person" element={<Celebrity />} />
-        <Route path="*" element={<Navigate replace to="/" />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
