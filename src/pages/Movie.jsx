@@ -1,6 +1,5 @@
 import React from "react";
 import Movies from "../components/Movie";
-import MovieDetail from "../components/MovieDetail";
 import { movies } from "../movieDummy";
 import "../styles/index.css";
 
@@ -16,7 +15,6 @@ export default function Movie() {
               poster_path={movie.poster_path}
               overview={movie.overview}
             />
-            <MovieDetail title={movie.title} overview={movie.overview} />
           </div>
         );
       })}

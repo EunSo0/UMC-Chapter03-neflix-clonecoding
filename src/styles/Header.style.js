@@ -6,11 +6,12 @@ export const Wrapper = styled.header`
   background-color: #143c70;
 `;
 export const ContentWrapper = styled.div`
+  width: 80%;
   height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 200px;
+  margin: 0 auto;
 `;
 export const Logo = styled.img`
   width: 154px;
@@ -19,7 +20,7 @@ export const Logo = styled.img`
 export const MenuList = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 0 20px;
+  margin: 0 30px;
 `;
 export const Menu = styled.div`
   color: #fff;

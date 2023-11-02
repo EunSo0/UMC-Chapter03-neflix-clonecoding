@@ -4,6 +4,7 @@ import Home from "./pages/Home.jsx";
 import Movie from "./pages/Movie.jsx";
 import TV from "./pages/TV.jsx";
 import Celebrity from "./pages/Celebrity.jsx";
+import MovieDetail from "./pages/MovieDetail.jsx";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie" element={<Movie />} />
+        <Route path="/movie/:title" element={<MovieDetail />} />
         <Route path="/tv" element={<TV />} />
         <Route path="/person" element={<Celebrity />} />
         <Route path="*" element={<Navigate replace to="/" />} />

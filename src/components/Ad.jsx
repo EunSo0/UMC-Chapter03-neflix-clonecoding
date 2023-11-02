@@ -7,7 +7,7 @@ export default function AdPage({ isShow }) {
   }
   return (
     <div>
-      <img src={adImage} alt="광고 이미지" />
+      <img src={adImage} alt="광고 이미지" style={{ width: "100%" }} />
     </div>
   );
 }
