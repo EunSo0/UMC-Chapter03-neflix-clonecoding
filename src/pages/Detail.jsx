@@ -1,7 +1,7 @@
 import { useLocation, useParams } from "react-router-dom";
 import * as MD from "../styles/MovieDetail.style.js";
 
-export default function MovieDetail() {
+export default function Detail() {
   const { title } = useParams();
   const { state } = useLocation();
 

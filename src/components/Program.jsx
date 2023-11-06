@@ -2,10 +2,10 @@ import React from "react";
 import * as M from "../styles/Movie.style";
 import { useNavigate } from "react-router-dom";
 
-function Movie(props) {
+function Program(props) {
   const navigate = useNavigate();
   const moveToDetail = () => {
-    navigate(`/movie/${props.title}`, {
+    navigate(`/detail/${props.title}`, {
       state: props,
     });
   };
@@ -31,4 +31,4 @@ function Movie(props) {
   );
 }
 
-export default Movie;
+export default Program;

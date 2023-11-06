@@ -1,5 +1,5 @@
 import React from "react";
-import Movies from "../components/Movie";
+import Program from "../components/Program";
 import { movies } from "../movieDummy";
 import "../styles/index.css";
 
@@ -9,7 +9,7 @@ export default function Movie() {
       {movies.results.map((movie, index) => {
         return (
           <div className="movie__wrapper" key={index}>
-            <Movies
+            <Program
               title={movie.title}
               vote_average={movie.vote_average}
               poster_path={movie.poster_path}
